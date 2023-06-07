@@ -63,7 +63,7 @@ function App() {
     .filter((stage) => selectedStageFilter.some((filter) => filter.value === stage.stageName))
     .map((stage) => {
       const mappedActs = stage.acts
-        .filter((act) => act.name.toLowerCase().includes(searchActsValue))
+        .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
         .map((act) => {
           const selected = selectedActs.some(item => act.name === item.name)
           
@@ -81,7 +81,7 @@ function App() {
     .filter((stage) => selectedStageFilter.some((filter) => filter.value === stage.stageName))
     .map((stage) => {
       const mappedActs = stage.acts
-      .filter((act) => act.name.toLowerCase().includes(searchActsValue))
+      .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
       .map((act) => {
       const selected = selectedActs.some(item => act.name === item.name)
 
@@ -98,7 +98,7 @@ function App() {
     .filter((stage) => selectedStageFilter.some((filter) => filter.value === stage.stageName))
     .map((stage) => {
       const mappedActs = stage.acts
-      .filter((act) => act.name.toLowerCase().includes(searchActsValue))
+      .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
       .map((act) => {
         const selected = selectedActs.some(item => act.name === item.name)
 
