@@ -27,18 +27,18 @@ function Plan({selectedActs}) {
   return (
     <div>
       <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'marginLeft': '10px'}}>Friday</div>
+        <div className="title" style={{'marginLeft': '10px', 'paddingTop': '10px'}}>Friday</div>
         {mappedFridayActs}
       </div>
       
       <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'marginLeft': '10px'}}>Saturday</div>
+        <div className="title" style={{'marginLeft': '10px', 'paddingTop': '10px'}}>Saturday</div>
         {mappedSaturdayActs}
       </div>
 
 
       <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'marginLeft': '10px'}}>Sunday</div>
+        <div className="title" style={{'marginLeft': '10px', 'paddingTop': '10px'}}>Sunday</div>
         {mappedSundayActs}
       </div>
     </div>
