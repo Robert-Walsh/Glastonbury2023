@@ -1,6 +1,6 @@
 function PlanAct({stage, name, time}){
   return (
-    <div style={{'margin-left': '10px'}}>
+    <div style={{'marginLeft': '10px'}}>
       <div style={{'fontWeight':'bold'}}>
         {name}
         <a href={`https://open.spotify.com/search/artist:${name}`} target="_blank" rel="noreferrer" style={{'position': 'absolute', 'right': '0', 'margin': '15px'}}>

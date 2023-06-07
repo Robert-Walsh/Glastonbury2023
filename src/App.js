@@ -17,7 +17,6 @@ function App() {
 
 
   useEffect(() => {
-    
     setSelectedActs(JSON.parse(localStorage.getItem("selectedActsData")) ?? [])
   }, [])
 
@@ -28,9 +27,12 @@ function App() {
   const handleSelectAct = (act) => {
     if(selectedActs.some(item => act.name === item.name)){
       setSelectedActs(selectedActs.filter(x => x.name !== act.name))
+      localStorage.setItem("selectedActsData", JSON.stringify(selectedActs.filter(x => x.name !== act.name)));
+
     }
     else {
       setSelectedActs([...selectedActs, act])
+      localStorage.setItem("selectedActsData", JSON.stringify([...selectedActs, act]));
     }
   }
 

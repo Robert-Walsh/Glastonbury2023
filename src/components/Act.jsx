@@ -4,7 +4,7 @@ function Act({stage, name, time, day, selected, onClick}){
   }
 
   return (
-    <div onClick={handleClick} style={{'cursor': 'pointer', 'backgroundColor': selected ? '#b8e994' : '', 'margin-left': '10px'}}>
+    <div onClick={handleClick} style={{'cursor': 'pointer', 'backgroundColor': selected ? '#b8e994' : '', 'marginLeft': '10px'}}>
       <div style={{'fontWeight':'bold'}}>
         {name}
         <a href={`https://open.spotify.com/search/artist:${name}`} target="_blank" rel="noreferrer" style={{'position': 'absolute', 'right': '0', 'margin': '15px'}}>
