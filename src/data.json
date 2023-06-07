@@ -63,6 +63,261 @@
           "time": "22:30 - 23:45" 
         }								
       ]
+    },
+	{
+      "stageName": "West Holts Stage",
+      "acts": [
+        {
+          "name": "STAR FEMININE BAND",
+          "time": "11:30 - 12:30" 
+        },	
+        {
+          "name": "YAYA BEY",
+          "time": "13:00 - 14:00" 
+        },
+        {
+          "name": "ADG7",
+          "time": "14:30 - 15:30" 
+        },
+        {
+          "name": "LOUIS COLE",
+          "time": "16:00 - 17:00" 
+        },
+        {
+          "name": "GABRIELS",
+          "time": "17:30 - 18:30" 
+        },
+        {
+          "name": "JOEY BADA$$",
+          "time": "19:00 - 20:00" 
+        },
+        {
+          "name": "YOUNG FATHERS",
+          "time": "20:30 - 21:30" 
+        },
+        {
+          "name": "KELIS",
+          "time": "22:15 - 23:45" 
+        }
+      ]
+    },
+	{
+      "stageName": "Woodsies",
+      "acts": [
+        {
+          "name": "THE SIXSTERS",
+          "time": "11:30 - 12:15" 
+        },
+        {
+          "name": "BRU-C",
+          "time": "12:45 - 13:30" 
+        },	
+        {
+          "name": "FLO",
+          "time": "14:00 - 14:45" 
+        },	
+        {
+          "name": "DIGGA D",
+          "time": "15:15 - 16:00" 
+        },	
+        {
+          "name": "PALE WAVES",
+          "time": "16:30 - 17:30" 
+        },	
+        {
+          "name": "COURTEENERS",
+          "time": "18:00 - 19:00" 
+        },	
+        {
+          "name": "TBA",
+          "time": "19:30 - 20:30" 
+        },	
+        {
+          "name": "WARPAINT",
+          "time": "21:00 - 22:00" 
+        },	
+        {
+          "name": "HOT CHIP",
+          "time": "22:30 - 23:45" 
+        }	
+      ]
+    },
+	{
+      "stageName": "The Park Stage",
+      "acts": [
+        {
+          "name": "ADWAITH",
+          "time": "11:30 - 12:10" 
+        },
+        {
+          "name": "ALABASTER DEPLUME",
+          "time": "12:45 - 13:30" 
+        },	
+        {
+          "name": "LOS BITCHOS",
+          "time": "14:00 - 14:45" 
+        },	
+        {
+          "name": "BILLY NOMATES",
+          "time": "15:15 - 16:15" 
+        },	
+        {
+          "name": "UNKNOWN MORTAL ORCHESTRA",
+          "time": "16:45 - 17:45" 
+        },	
+        {
+          "name": "THE COMET IS COMING",
+          "time": "18:15 - 19:15" 
+        },	
+        {
+          "name": "SHYGIRL",
+          "time": "19:45 - 20:45" 
+        },	
+        {
+          "name": "SPARKS",
+          "time": "21:15 - 22:15" 
+        },	
+        {
+          "name": "FEVER RAY",
+          "time": "23:00 - 00:15" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Acoustic Stage",
+      "acts": [
+        {
+          "name": "AL LEWIS",
+          "time": "11:30 - 12:00" 
+        },	
+        {
+          "name": "ALLISON RUSSELL",
+          "time": "12:10 - 12:40" 
+        },	
+        {
+          "name": "SNIFF 'N' THE TEARS",
+          "time": "13:00 - 13:40" 
+        },	
+        {
+          "name": "MARTIN STEPHENSON & THE DAINTEES",
+          "time": "14:00 - 14:40" 
+        },	
+        {
+          "name": "THE MARY WALLOPERS",
+          "time": "15:00 - 15:40" 
+        },	
+        {
+          "name": "SETH LAKEMAN",
+          "time": "16:00 - 16:40" 
+        },	
+        {
+          "name": "NEWTON FAULKNER",
+          "time": "17:00 - 18:00" 
+        },	
+        {
+          "name": "GAVIN JAMES",
+          "time": "18:30 - 19:30" 
+        },	
+        {
+          "name": "STEVE EARLE",
+          "time": "20:00 - 21:00" 
+        },	
+        {
+          "name": "THE SAW DOCTORS",
+          "time": "21:30 - 22:45" 
+        }				      						
+      ]
+    },
+	{
+      "stageName": "Avalon Stage",
+      "acts": [
+        {
+          "name": "HOBO JONES & THE JUNKYARD DOGS",
+          "time": "13:00 - 13:50" 
+        },	
+        {
+          "name": "FANNY LUMSDEN",
+          "time": "14:15 - 15:05" 
+        },	
+        {
+          "name": "JAMIE WEBSTER",
+          "time": "15:35 - 16:35" 
+        },	
+        {
+          "name": "LOTTERY WINNERS",
+          "time": "17:05 - 18:05" 
+        },	
+        {
+          "name": "LAURA MVULA",
+          "time": "18:35 - 19:35" 
+        },	
+        {
+          "name": "XAVIER RUDD",
+          "time": "20:05 - 21:05" 
+        },	
+        {
+          "name": "FREYA RIDINGS",
+          "time": "21:35 - 22:35" 
+        },	
+        {
+          "name": "THE DAMNED",
+          "time": "23:05 - 00:20" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Left Field",
+      "acts": [
+        {
+          "name": "DEBATES: WOMAN, LIFE, FREEDOM: SOLIDARITY WITH IRAN: WITH AGHILEH DJAFARI-MARBINI, NAZANIN ZAGHARI-RATCLIFFE, PARDIS SHAFAFI, SHAPPI KHORSANDI, HANAN ABDALLA",
+          "time": "12:00 - 13:00" 
+        },	
+        {
+          "name": "DEBATES: THIS LAND IS YOUR LAND: THE FIGHT FOR NATURE: WITH BLACK GIRLS HIKE, CLAIRE RATINON, RIGHT TO ROAM, SURFERS AGAINST SEWAGE, JOHN HARRIS",
+          "time": "13:30 - 14:30" 
+        },	
+        {
+          "name": "RADICAL ROUND UP: BILLY BRAGG, TARA LILY, SAM LEE, DAVID ROVICS",
+          "time": "15:00 - 16:30" 
+        },	
+        {
+          "name": "DEADLETTER",
+          "time": "17:00 - 17:45" 
+        },	
+        {
+          "name": "CASSYETTE",
+          "time": "18:15 - 19:00" 
+        },	
+        {
+          "name": "BENEFITS",
+          "time": "19:30 - 20:30" 
+        },	
+        {
+          "name": "BILLY BRAGG",
+          "time": "21:00 - 22:00" 
+        }				      						
+      ]
+    },
+	{
+      "stageName": "Arcadia",
+      "acts": [
+        {
+          "name": "ELKKA",
+          "time": "21:30 - 22:30" 
+        },	
+        {
+          "name": "THE CHEMICAL BROTHERS (DJ SET)",
+          "time": "22:30 - 00:30" 
+        },	
+        {
+          "name": "FLOATING POINTS B2B DAPHNI",
+          "time": "00:30 - 02:00" 
+        },	
+        {
+          "name": "SHERELLE",
+          "time": "02:00 - 03:00" 
+        }			      						
+      ]
     }
   ],
   "saturday": [
@@ -135,6 +390,281 @@
           "time": "22:30 - 23:45"
         }
       ]
+    },
+	{
+      "stageName": "West Holts Stage",
+      "acts": [
+        {
+          "name": "SAY SHE SHE",
+          "time": "11:30 - 12:30" 
+        },	
+        {
+          "name": "KANDA BONGO MAN",
+          "time": "13:00 - 14:00" 
+        },	
+        {
+          "name": "SUDAN ARCHIVES",
+          "time": "14:30 - 15:30" 
+        },	
+        {
+          "name": "THIRD WORLD",
+          "time": "16:00 - 17:00" 
+        },	
+        {
+          "name": "JACOB COLLIER",
+          "time": "17:30 - 18:30" 
+        },	
+        {
+          "name": "EZRA COLLECTIVE",
+          "time": "19:00 - 20:00" 
+        },	
+        {
+          "name": "MAHALIA",
+          "time": "20:30 - 21:30" 
+        },	
+        {
+          "name": "LOYLE CARNER",
+          "time": "22:15 - 23:45" 
+        }				      						
+      ]
+    },
+	{
+      "stageName": "Woodsies",
+      "acts": [
+        {
+          "name": "THE LAST DINNER PARTY",
+          "time": "11:30 - 12:15" 
+        },	
+        {
+          "name": "WUNDERHORSE",
+          "time": "12:45 - 13:30" 
+        },	
+        {
+          "name": "WORKING MEN'S CLUB",
+          "time": "14:00 - 14:45" 
+        },	
+        {
+          "name": "THE MURDER CAPITAL",
+          "time": "15:15 - 16:00" 
+        },	
+        {
+          "name": "SHAME",
+          "time": "16:30 - 17:30" 
+        },	
+        {
+          "name": "TBA",
+          "time": "18:00 - 19:00" 
+        },	
+        {
+          "name": "MÅNESKIN",
+          "time": "19:30 - 20:30" 
+        },	
+        {
+          "name": "RINA SAWAYAMA",
+          "time": "21:00 - 22:00" 
+        },	
+        {
+          "name": "CHRISTINE AND THE QUEENS",
+          "time": "22:30 - 23:45" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "The Park Stage",
+      "acts": [
+        {
+          "name": "MAX RICHTER",
+          "time": "11:10 - 12:10" 
+        },
+        {
+          "name": "JAMES ELLIS FORD",
+          "time": "12:45 - 13:30" 
+        },
+        {
+          "name": "FLOHIO",
+          "time": "14:00 - 14:45" 
+        },
+        {
+          "name": "JOCKSTRAP",
+          "time": "15:15 - 16:15" 
+        },
+        {
+          "name": "OBONGJAYAR",
+          "time": "16:45 - 17:45" 
+        },
+        {
+          "name": "TINARIWEN",
+          "time": "18:15 - 19:15" 
+        },
+        {
+          "name": "TBA",
+          "time": "19:45 - 20:45" 
+        },
+        {
+          "name": "LEFTFIELD",
+          "time": "21:15 - 22:15" 
+        },
+        {
+          "name": "FATBOY SLIM",
+          "time": "23:00 - 00:15" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Acoustic Stage",
+      "acts": [
+        {
+          "name": "CLARE SANDS",
+          "time": "11:30 - 12:00" 
+        },	
+        {
+          "name": "KATYA",
+          "time": "12:10 - 12:40" 
+        },	
+        {
+          "name": "ROO PANES",
+          "time": "13:00 - 13:40" 
+        },	
+        {
+          "name": "THE MAGIC NUMBERS",
+          "time": "14:00 - 14:40" 
+        },	
+        {
+          "name": "THE SHARON SHANNON TRIO",
+          "time": "15:00 - 15:40" 
+        },	
+        {
+          "name": "BADLY DRAWN BOY",
+          "time": "16:00 - 16:40" 
+        },	
+        {
+          "name": "RICHARD THOMPSON",
+          "time": "17:00 - 18:00" 
+        },	
+        {
+          "name": "GLENN TILBROOK AND BEAUTIFUL LANDING",
+          "time": "18:30 - 19:30" 
+        },	
+        {
+          "name": "GLEN HANSARD",
+          "time": "20:00 - 21:00" 
+        },	
+        {
+          "name": "PAUL CARRACK",
+          "time": "21:30 - 22:45" 
+        }						      						
+      ]
+    },
+	{
+      "stageName": "Avalon Stage",
+      "acts": [
+        {
+          "name": "CABLE STREET COLLECTIVE",
+          "time": "11:30 - 12:2" 
+        },	
+        {
+          "name": "HOLY MOLY & THE CRACKERS",
+          "time": "12:50 - 13:45" 
+        },	
+        {
+          "name": "BEANS ON TOAST",
+          "time": "14:10 - 15:05" 
+        },	
+        {
+          "name": "JOANNE SHAW TAYLOR",
+          "time": "15:35 - 16:35" 
+        },	
+        {
+          "name": "FISHERMAN'S FRIENDS",
+          "time": "17:05 - 18:05" 
+        },	
+        {
+          "name": "GABRIELLE APLIN",
+          "time": "18:35 - 19:35" 
+        },	
+        {
+          "name": "JAKE SHEARS",
+          "time": "20:05 - 21:05" 
+        },	
+        {
+          "name": "MELANIE C",
+          "time": "21:35 - 22:35" 
+        },	
+        {
+          "name": "MELANIE C",
+          "time": "21:35 - 22:35" 
+        },	
+        {
+          "name": "VINTAGE TROUBLE",
+          "time": "23:05 - 00:15" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Left Field",
+      "acts": [
+        {
+          "name": "DEBATES: ONE MINUTE TO MIDNIGHT: CAN POLITICS DELIVER ON CLIMATE ACTION? WITH AREEBA HAMID, ED MILIBAND MP, SEPI GOLZARI-MUNRO, XR, JOHN HARRIS",
+          "time": "12:00 - 13:00" 
+        },
+        {
+          "name": "DEBATES: CAN WE SAVE THE NHS? WITH MIGRANTS ORGANISE, WE OWN IT, DR SONIA ADESARA, DR ROSENA ALLIN-KHAN MP, MINNIE RAHMAN",
+          "time": "13:30 - 14:30" 
+        },
+        {
+          "name": "RADICAL ROUND UP: BILLY BRAGG, JAMIE WEBSTER, RIANNE DOWNEY",
+          "time": "15:00 - 16:00" 
+        },
+        {
+          "name": "BIG JOANIE",
+          "time": "16:30 - 17:00" 
+        },
+        {
+          "name": "DELILAH BON",
+          "time": "17:00 - 17:45" 
+        },
+        {
+          "name": "CRAWLERS",
+          "time": "18:15 - 19:00" 
+        },
+        {
+          "name": "KID KAPICHI",
+          "time": "19:30 - 20:30" 
+        },
+        {
+          "name": "DRÉYA MAC",
+          "time": "21:00 - 22:00" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Arcadia",
+      "acts": [
+        {
+          "name": "DR BANANA",
+          "time": "21:30 - 22:00" 
+        },	
+        {
+          "name": "CHLOE ROBINSON B2B PLASTICIAN",
+          "time": "22:00 - 23:00" 
+        },	
+        {
+          "name": "MK",
+          "time": "23:00 - 00:00" 
+        },	
+        {
+          "name": "SKEPTA B2B JAMMER",
+          "time": "00:00 - 01:00" 
+        },	
+        {
+          "name": "SKREAM B2B INTERPLANETARY CRIMINAL",
+          "time": "01:00 - 02:00" 
+        },	
+        {
+          "name": "VTSS",
+          "time": "02:00 - 03:00" 
+        }				      						
+      ]
     }
   ],
   "sunday": [
@@ -206,6 +736,269 @@
           "name": "QUEENS OF THE STONE AGE",
           "time": "21:45 - 23:15"
         }
+      ]
+    },
+	{
+      "stageName": "West Holts Stage",
+      "acts": [
+        {
+          "name": "SKINNY PELEMBE",
+          "time": "11:00 - 12:00" 
+        },	
+        {
+          "name": "BETH ORTON",
+          "time": "12:30 - 13:30" 
+        },	
+        {
+          "name": "BLACK COUNTRY, NEW ROAD",
+          "time": "14:00 - 15:00" 
+        },	
+        {
+          "name": "SPEAKERS CORNER QUARTET",
+          "time": "15:30 - 16:30" 
+        },	
+        {
+          "name": "THE HU",
+          "time": "17:00 - 18:00" 
+        },	
+        {
+          "name": "BARRINGTON LEVY",
+          "time": "18:30 - 19:30" 
+        },	
+        {
+          "name": "CANDI STATON",
+          "time": "20:00 - 21:00" 
+        },	
+        {
+          "name": "RUDIMENTAL",
+          "time": "21:45 - 23:15" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Woodsies",
+      "acts": [
+        {
+          "name": "THE LOVE BUZZ",
+          "time": "11:15 - 12:00" 
+        },	
+        {
+          "name": "CMAT",
+          "time": "12:30 - 13:30" 
+        },	
+        {
+          "name": "THE BIG MOON",
+          "time": "14:00 - 15:00" 
+        },	
+        {
+          "name": "CAT BURNS",
+          "time": "15:30 - 16:30" 
+        },	
+        {
+          "name": "SLOWDIVE",
+          "time": "17:00 - 18:00" 
+        },	
+        {
+          "name": "EDITORS",
+          "time": "18:30 - 19:30" 
+        },	
+        {
+          "name": "CAROLINE POLACHEK",
+          "time": "20:00 - 21:00" 
+        },	
+        {
+          "name": "PHOENIX",
+          "time": "21:30 - 22:45" 
+        }						      						
+      ]
+    },
+	{
+      "stageName": "The Park Stage",
+      "acts": [
+        {
+          "name": "JOHN FRANCIS FLYNN",
+          "time": "11:30 - 12:15" 
+        },	
+        {
+          "name": "GWENNO",
+          "time": "12:45 - 13:30" 
+        },		
+        {
+          "name": "CHARLOTTE ADIGERY & BOLIS PUPUL",
+          "time": "14:00 - 14:45" 
+        },		
+        {
+          "name": "WEYES BLOOD",
+          "time": "15:15 - 16:00" 
+        },		
+        {
+          "name": "VIAGRA BOYS",
+          "time": "16:30 - 17:30" 
+        },		
+        {
+          "name": "ALISON GOLDFRAPP",
+          "time": "18:15 - 19:15" 
+        },		
+        {
+          "name": "THUNDERCAT",
+          "time": "19:45 - 20:45" 
+        },		
+        {
+          "name": "ALT-J",
+          "time": "21:15 - 22:30" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Acoustic Stage",
+      "acts": [
+        {
+          "name": "ANGELINE MORRISON",
+          "time": "11:30 - 12:00" 
+        },	
+        {
+          "name": "NAOMI KIMPENU (ETC FINALIST)",
+          "time": "12:10 - 12:40" 
+        },	
+        {
+          "name": "KATHRYN ROBERTS & SEAN LAKEMAN",
+          "time": "13:00 - 13:40" 
+        },	
+        {
+          "name": "RUMER",
+          "time": "14:00 - 14:40" 
+        },	
+        {
+          "name": "BIRD ON THE WIRE: THE SONGS OF LEONARD COHEN",
+          "time": "15:00 - 15:50" 
+        },	
+        {
+          "name": "TOYAH WILLCOX & ROBERT FRIPP",
+          "time": "16:10 - 17:10" 
+        },	
+        {
+          "name": "LAURA CANTRELL",
+          "time": "17:30 - 18:10" 
+        },	
+        {
+          "name": "THE BOOTLEG BEATLES",
+          "time": "18:30 - 19:30" 
+        },	
+        {
+          "name": "GILBERT O'SULLIVAN",
+          "time": "20:00 - 21:00" 
+        },	
+        {
+          "name": "RICKIE LEE JONES",
+          "time": "21:30 - 22:45" 
+        }					      						
+      ]
+    },
+	{
+      "stageName": "Avalon Stage",
+      "acts": [
+        {
+          "name": "N'FAMADY KOUYATÉ",
+          "time": "11:30 - 12:10" 
+        },	
+        {
+          "name": "HANNAH WILLIAMS & THE AFFIRMATIONS",
+          "time": "12:35 - 13:25" 
+        },	
+        {
+          "name": "CARA DILLON",
+          "time": "13:55 - 14:50" 
+        },	
+        {
+          "name": "ELVANA",
+          "time": "15:20 - 16:20" 
+        },	
+        {
+          "name": "WILL YOUNG",
+          "time": "16:50 - 17:50" 
+        },	
+        {
+          "name": "FAR FROM SAINTS",
+          "time": "18:20 - 19:20" 
+        },	
+        {
+          "name": "LISSIE",
+          "time": "19:50 - 20:50" 
+        },	
+        {
+          "name": "MICA PARIS",
+          "time": "21:20 - 22:20" 
+        },	
+        {
+          "name": "NEVILLE STAPLE - FROM THE SPECIALS",
+          "time": "22:50 - 23:50" 
+        }						      						
+      ]
+    },
+	{
+      "stageName": "Left Field",
+      "acts": [
+        {
+          "name": "DEBATES: POWER IN A UNION: A YEAR OF STRIKES AND SOLIDARITY WITH STRIKING NURSE, STRIKING TEACHER, PAT CULLEN (RCN), MIATTA FAHNBULLEH, JOHN HARRIS",
+          "time": "12:00 - 13:00" 
+        },	
+        {
+          "name": "DEBATES: TRUTH, JUSTICE AND CHANGE FOR GRENFELL? WITH BEREAVED AND SURVIVORS FROM GRENFELL UNITED, NIM RALPH",
+          "time": "13:30 - 14:30" 
+        },	
+        {
+          "name": "RADICAL ROUND UP: BILLY BRAGG, HANNAH GRAE, TYLA JAY, MICK THOMAS AND JEN ANDERSON",
+          "time": "15:00 - 16:30" 
+        },	
+        {
+          "name": "TOM A. SMITH",
+          "time": "17:00 - 17:45" 
+        },	
+        {
+          "name": "LIME GARDEN",
+          "time": "18:15 - 19:00" 
+        },	
+        {
+          "name": "WILL VARLEY",
+          "time": "19:30 - 20:30" 
+        },	
+        {
+          "name": "CAVETOWN",
+          "time": "21:00 - 22:00" 
+        }			      						
+      ]
+    },
+	{
+      "stageName": "Arcadia",
+      "acts": [
+        {
+          "name": "DUBKASM",
+          "time": "20:15 - 21:00" 
+        },	
+        {
+          "name": "RUFFNECK TING 30 FT DAZEE, EUPHONIQUE, JENNI GROVES & JAKES",
+          "time": "21:00 - 21:45" 
+        },	
+        {
+          "name": "DJ FLIGHT",
+          "time": "21:45 - 22:30" 
+        },	
+        {
+          "name": "DJ Q B2B YUNG SINGH",
+          "time": "22:30 - 23:30" 
+        },	
+        {
+          "name": "SHY FX FT STAMINA MC",
+          "time": "23:30 - 00:30" 
+        },	
+        {
+          "name": "HYBRID MINDS FT TEMPAZ",
+          "time": "00:30 - 01:30" 
+        },	
+        {
+          "name": "WILKINSON",
+          "time": "01:30 - 02:30" 
+        }					      						
       ]
     }
   ]		
