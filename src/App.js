@@ -17,7 +17,8 @@ function App() {
 
 
   useEffect(() => {
-    setSelectedActs(JSON.parse(localStorage.getItem("selectedActsData")))
+    
+    setSelectedActs(JSON.parse(localStorage.getItem("selectedActsData")) ?? [])
   }, [])
 
   const handleTabClick = (day) => {
