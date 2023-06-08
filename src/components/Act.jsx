@@ -16,7 +16,7 @@ function Act({stage, name, time, day, mustSee, mightSee, onClick}){
   }
 
   return (
-    <div onClick={handleClick} style={{'cursor': 'pointer', 'backgroundColor': backgroundColor, 'marginLeft': '10px', 'borderRadius': '4px', 'border': 'solid 1px grey', 'boxShadow': '0 8px 6px -6px black', 'marginBottom': '10px', 'height':'70px'}}>
+    <div onClick={handleClick} style={{'cursor': 'pointer', 'backgroundColor': backgroundColor, 'marginLeft': '10px', 'borderRadius': '4px', 'border': 'solid 1px grey', 'boxShadow': '0 8px 6px -6px black', 'marginBottom': '10px', 'height':'auto'}}>
       <div style={{'fontWeight':'bold', 'padding': '3px'}}>
         {name}
         <a href={`https://open.spotify.com/search/artist:${name}`} target="_blank" rel="noreferrer" style={{'position': 'absolute', 'right': '0', 'margin': '10px'}}>
