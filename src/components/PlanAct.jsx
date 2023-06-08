@@ -1,7 +1,7 @@
 function PlanAct({stage, name, time, mustSee, mightSee}){
   
   const mustSeeBox = (
-    <div style={{'backgroundColor': '#b8e994', 'borderRadius': '4px', 'textAlign': 'center', 'width': '15%', 'border': 'solid 1px grey', 'fontSize': '10px', 'fontWeight': 'bold', 'marginTop': '4px', 'boxShadow': '0 8px 6px -6px black'}}>
+    <div style={{'backgroundColor': '#b8e994', 'borderRadius': '4px', 'textAlign': 'center', 'width': '18%', 'border': 'solid 1px grey', 'fontSize': '10px', 'fontWeight': 'bold', 'marginTop': '4px', 'boxShadow': '0 8px 6px -6px black'}}>
       <div style={{'padding': '4px'}}>
         Must See
       </div>
@@ -9,7 +9,7 @@ function PlanAct({stage, name, time, mustSee, mightSee}){
   )
 
   const mightSeeBox = (
-    <div style={{'backgroundColor': '#fffa65', 'borderRadius': '4px', 'textAlign': 'center', 'width': '15%', 'border': 'solid 1px grey', 'fontSize': '10px', 'fontWeight': 'bold', 'marginTop': '4px', 'boxShadow': '0 8px 6px -6px black'}}>
+    <div style={{'backgroundColor': '#fffa65', 'borderRadius': '4px', 'textAlign': 'center', 'width': '18%', 'border': 'solid 1px grey', 'fontSize': '10px', 'fontWeight': 'bold', 'marginTop': '4px', 'boxShadow': '0 8px 6px -6px black'}}>
       <div style={{'padding': '4px'}}>
         Might See
       </div>
