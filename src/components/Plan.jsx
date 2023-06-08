@@ -7,19 +7,19 @@ function Plan({selectedActs}) {
 
   const mappedFridayActs = fridayActs.map((act) => {
     return (
-      <PlanAct key={act.name} name={act.name} stage={act.stage} time={act.time}/>
+      <PlanAct key={act.name} name={act.name} stage={act.stage} time={act.time} mustSee={act.mustSee} mightSee={act.mightSee}/>
     )
   })
 
   const mappedSaturdayActs = saturdayActs.map((act) => {
     return (
-      <PlanAct key={act.name} name={act.name} stage={act.stage} time={act.time}/>
+      <PlanAct key={act.name} name={act.name} stage={act.stage} time={act.time} mustSee={act.mustSee} mightSee={act.mightSee}/>
     )
   })
 
   const mappedSundayActs = sundayActs.map((act) => {
     return (
-      <PlanAct key={act.name} name={act.name} stage={act.stage} time={act.time}/>
+      <PlanAct key={act.name} name={act.name} stage={act.stage} time={act.time} mustSee={act.mustSee} mightSee={act.mightSee}/>
     )
   })
 

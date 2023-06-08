@@ -41,11 +41,27 @@ function App() {
 
   const handleSelectAct = (act) => {
     if(selectedActs.some(item => act.name === item.name)){
-      setSelectedActs(selectedActs.filter(x => x.name !== act.name))
-      localStorage.setItem("selectedActsData", JSON.stringify(selectedActs.filter(x => x.name !== act.name)));
+      
+      if(act.mustSee === true){
+        act.mightSee = true
+        act.mustSee = false
 
+        const filtered = selectedActs.filter(x => x.name !== act.name)
+        setSelectedActs([...filtered, act])
+
+        localStorage.setItem("selectedActsData", JSON.stringify([...filtered, act]));
+      }
+      else{
+        act.mightSee = false
+        act.mustSee = false
+        setSelectedActs(selectedActs.filter(x => x.name !== act.name))
+        localStorage.setItem("selectedActsData", JSON.stringify(selectedActs.filter(x => x.name !== act.name)));
+      }
     }
     else {
+      act.mustSee = true
+      act.mightSee = false
+
       setSelectedActs([...selectedActs, act])
       localStorage.setItem("selectedActsData", JSON.stringify([...selectedActs, act]));
     }
@@ -65,10 +81,10 @@ function App() {
       const mappedActs = stage.acts
         .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
         .map((act) => {
-          const selected = selectedActs.some(item => act.name === item.name)
+          const selectedValue = selectedActs.find(item => act.name === item.name)
           
           return (
-            <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'FRIDAY'} selected={selected} onClick={handleSelectAct}/>
+            <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'FRIDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
           )
       }
     )
@@ -83,10 +99,10 @@ function App() {
       const mappedActs = stage.acts
       .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
       .map((act) => {
-      const selected = selectedActs.some(item => act.name === item.name)
+        const selectedValue = selectedActs.find(item => act.name === item.name)
 
       return (
-        <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'SATURDAY'} selected={selected} onClick={handleSelectAct}/>
+        <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'SATURDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
       )
     })
     return (
@@ -100,10 +116,10 @@ function App() {
       const mappedActs = stage.acts
       .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
       .map((act) => {
-        const selected = selectedActs.some(item => act.name === item.name)
+        const selectedValue = selectedActs.find(item => act.name === item.name)
 
         return (
-          <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'SUNDAY'} selected={selected} onClick={handleSelectAct}/>
+          <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'SUNDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
         )
       }
     )

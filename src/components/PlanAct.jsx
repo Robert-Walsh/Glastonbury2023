@@ -1,4 +1,21 @@
-function PlanAct({stage, name, time}){
+function PlanAct({stage, name, time, mustSee, mightSee}){
+  
+  const mustSeeBox = (
+    <div style={{'backgroundColor': '#b8e994', 'borderRadius': '4px', 'border': 'solid 1px grey', 'width': '55px', 'fontSize': '10px', 'fontWeight': 'bold', 'marginTop': '4px', 'boxShadow': '0 8px 6px -6px black'}}>
+      <div style={{'padding': '4px'}}>
+        Must See
+      </div>
+    </div>
+  )
+
+  const mightSeeBox = (
+    <div style={{'backgroundColor': '#fffa65', 'borderRadius': '4px', 'border': 'solid 1px grey','width': '60px', 'fontSize': '10px', 'fontWeight': 'bold', 'marginTop': '4px', 'boxShadow': '0 8px 6px -6px black'}}>
+      <div style={{'padding': '4px'}}>
+        Might See
+      </div>
+    </div>
+  )
+  
   return (
     <div style={{'marginLeft': '10px'}}>
       <div style={{'fontWeight':'bold'}}>
@@ -13,6 +30,8 @@ function PlanAct({stage, name, time}){
       <div>
         {time}
       </div>
+      {mustSee && mustSeeBox}
+      {mightSee && mightSeeBox}
       <hr/>
     </div>
   )
