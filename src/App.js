@@ -100,9 +100,11 @@ function App() {
           )
       }
     )
-    return (
-      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
-    )
+    if(mappedActs.length > 0){
+      return (
+        <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+      )
+    }
   })
 
   const mappedThursday = data2.thursday
@@ -119,9 +121,11 @@ function App() {
           )
       }
     )
-    return (
-      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
-    )
+    if(mappedActs.length > 0){
+      return (
+        <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+      )
+    }
   })
 
 
@@ -139,9 +143,11 @@ function App() {
           )
       }
     )
-    return (
-      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
-    )
+    if(mappedActs.length > 0){
+      return (
+        <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+      )
+    }
   })
 
   const mappedSaturday = data2.saturday
@@ -157,9 +163,11 @@ function App() {
         <Act key={`${act.name} ${act.time}`} stage={stage.stageName} name={act.name} time={act.time} day={'SATURDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
       )
     })
-    return (
-      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
-    )
+    if(mappedActs.length > 0){
+      return (
+        <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+      )
+    }
   })
 
   const mappedSunday = data2.sunday
@@ -176,9 +184,11 @@ function App() {
         )
       }
     )
-    return (
-      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
-    )
+    if(mappedActs.length > 0){
+      return (
+        <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+      )
+    }
   })
 
   return (
