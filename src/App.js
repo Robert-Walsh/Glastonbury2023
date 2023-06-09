@@ -181,7 +181,6 @@ function App() {
     )
   })
 
-  console.log('stageOptions:', stageOptions)
   return (
     <div>
       <div className="tabs">
