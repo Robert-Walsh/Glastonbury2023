@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import data from './data.json';
+import data2 from './data2.json';
 import Stage from './components/Stage';
 import Act from './components/Act';
 import Plan from './components/Plan';
@@ -7,36 +7,47 @@ import React from 'react'
 import Select from 'react-select'
 
 const tabs = {
+  wednesday: 'WEDNESDAY',
+  thursday: 'THURSDAY',
   friday: 'FRIDAY',
   saturday: 'SATURDAY',
   sunday: 'SUNDAY',
   myPlan: 'MY PLAN'
 }
 
-const stageOptions = [
-  { value: 'Pyramid Stage', label: 'Pyramid Stage' },
-  { value: 'Other Stage', label: 'Other Stage' },
-  { value: 'West Holts Stage', label: 'West Holts Stage' },
-  { value: 'Woodsies', label: 'Woodsies' },
-  { value: 'The Park Stage', label: 'The Park Stage' },
-  { value: 'Acoustic Stage', label: 'Acoustic Stage' },
-  { value: 'Avalon Stage', label: 'Avalon Stage' },
-  { value: 'Left Field', label: 'Left Field' },
-  { value: 'Arcadia', label: 'Arcadia' }
-]
-
 function App() {
-  const [selectedTab, setSelectedTab] = useState(tabs.friday)
+  const [selectedTab, setSelectedTab] = useState(tabs.myPlan)
   const [selectedActs, setSelectedActs] = useState([])
-  const [selectedStageFilter, setSelectedStageFilter] = useState(stageOptions)
+  const [stageOptions, setStageOptions] = useState([])
+  const [selectedStageFilter, setSelectedStageFilter] = useState([])
   const [searchActsValue, setSearchActsValue] = useState("")
 
   useEffect(() => {
     setSelectedActs(JSON.parse(localStorage.getItem("selectedActsData")) ?? [])
+    let newStageOptions = []
+
+    const data = data2.friday
+    for(var i=0; i<data.length;i++){
+      newStageOptions.push({value: data[i].stageName.toUpperCase(), label: data[i].stageName.toUpperCase()})
+    }
+    
+    setStageOptions(newStageOptions)
+    setSelectedStageFilter(newStageOptions)
   }, [])
 
-  const handleTabClick = (day) => {
+  const handleTabClick = (day, data) => {
     setSelectedTab(day)
+
+    if(day !== tabs.myPlan){
+      let newStageOptions = []
+
+      for(var i=0; i<data.length;i++){
+        newStageOptions.push({value: data[i].stageName.toUpperCase(), label: data[i].stageName.toUpperCase()})
+      }
+
+      setStageOptions(newStageOptions)
+      setSelectedStageFilter(newStageOptions)
+    }
   }
 
   const handleSelectAct = (act) => {
@@ -75,16 +86,17 @@ function App() {
     setSearchActsValue(e.target.value)
   }
 
-  const mappedFriday = data.friday
-    .filter((stage) => selectedStageFilter.some((filter) => filter.value === stage.stageName))
+  const mappedWednesday = data2.wednesday
+    .filter((stage) => selectedStageFilter.some((filter) => filter.value.toUpperCase() === stage.stageName.toUpperCase()))
     .map((stage) => {
       const mappedActs = stage.acts
         .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
+        .sort((a, b) => a.time > b.time ? 1 : -1)
         .map((act) => {
           const selectedValue = selectedActs.find(item => act.name === item.name)
           
           return (
-            <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'FRIDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
+            <Act key={`${act.name} ${act.time}`} stage={stage.stageName} name={act.name} time={act.time} day={'WEDNESDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
           )
       }
     )
@@ -93,34 +105,18 @@ function App() {
     )
   })
 
-  const mappedSaturday = data.saturday
-    .filter((stage) => selectedStageFilter.some((filter) => filter.value === stage.stageName))
+  const mappedThursday = data2.thursday
+    .filter((stage) => selectedStageFilter.some((filter) => filter.value.toUpperCase() === stage.stageName.toUpperCase()))
     .map((stage) => {
       const mappedActs = stage.acts
-      .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
-      .map((act) => {
-        const selectedValue = selectedActs.find(item => act.name === item.name)
-
-      return (
-        <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'SATURDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
-      )
-    })
-    return (
-      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
-    )
-  })
-
-  const mappedSunday = data.sunday
-    .filter((stage) => selectedStageFilter.some((filter) => filter.value === stage.stageName))
-    .map((stage) => {
-      const mappedActs = stage.acts
-      .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
-      .map((act) => {
-        const selectedValue = selectedActs.find(item => act.name === item.name)
-
-        return (
-          <Act key={act.name} stage={stage.stageName} name={act.name} time={act.time} day={'SUNDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
-        )
+        .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
+        .sort((a, b) => a.time > b.time ? 1 : -1)
+        .map((act) => {
+          const selectedValue = selectedActs.find(item => act.name === item.name)
+          
+          return (
+            <Act key={`${act.name} ${act.time}`} stage={stage.stageName} name={act.name} time={act.time} day={'THURSDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
+          )
       }
     )
     return (
@@ -129,14 +125,73 @@ function App() {
   })
 
 
+  const mappedFriday = data2.friday
+    .filter((stage) => selectedStageFilter.some((filter) => filter.value.toUpperCase() === stage.stageName.toUpperCase()))
+    .map((stage) => {
+      const mappedActs = stage.acts
+        .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
+        .sort((a, b) => a.time > b.time ? 1 : -1)
+        .map((act) => {
+          const selectedValue = selectedActs.find(item => act.name === item.name)
+          
+          return (
+            <Act key={`${act.name} ${act.time}`} stage={stage.stageName} name={act.name} time={act.time} day={'FRIDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
+          )
+      }
+    )
+    return (
+      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+    )
+  })
+
+  const mappedSaturday = data2.saturday
+    .filter((stage) => selectedStageFilter.some((filter) => filter.value.toUpperCase() === stage.stageName.toUpperCase()))
+    .map((stage) => {
+      const mappedActs = stage.acts
+      .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
+      .sort((a, b) => a.time > b.time ? 1 : -1)
+      .map((act) => {
+        const selectedValue = selectedActs.find(item => act.name === item.name)
+
+      return (
+        <Act key={`${act.name} ${act.time}`} stage={stage.stageName} name={act.name} time={act.time} day={'SATURDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
+      )
+    })
+    return (
+      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+    )
+  })
+
+  const mappedSunday = data2.sunday
+    .filter((stage) => selectedStageFilter.some((filter) => filter.value.toUpperCase() === stage.stageName.toUpperCase()))
+    .map((stage) => {
+      const mappedActs = stage.acts
+      .filter((act) => act.name.toLowerCase().includes(searchActsValue.toLowerCase()))
+      .sort((a, b) => a.time > b.time ? 1 : -1)
+      .map((act) => {
+        const selectedValue = selectedActs.find(item => act.name === item.name)
+
+        return (
+          <Act key={`${act.name} ${act.time}`} stage={stage.stageName} name={act.name} time={act.time} day={'SUNDAY'} mustSee={selectedValue?.mustSee} mightSee={selectedValue?.mightSee} onClick={handleSelectAct}/>
+        )
+      }
+    )
+    return (
+      <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
+    )
+  })
+
+  console.log('stageOptions:', stageOptions)
   return (
     <div>
       <div className="tabs">
-        <ul>
-          <li className={selectedTab === tabs.friday && "is-active"} onClick={() => handleTabClick(tabs.friday)}><a href="/#">Friday</a></li>
-          <li className={selectedTab === tabs.saturday && "is-active"} onClick={() => handleTabClick(tabs.saturday)}><a href="/#">Saturday</a></li>
-          <li className={selectedTab === tabs.sunday && "is-active"} onClick={() => handleTabClick(tabs.sunday)}><a href="/#">Sunday</a></li>
+        <ul>          
           <li className={selectedTab === tabs.myPlan && "is-active"} onClick={() => handleTabClick(tabs.myPlan)}><a href="/#">My Plan</a></li>
+          <li className={selectedTab === tabs.wednesday && "is-active"} onClick={() => handleTabClick(tabs.wednesday, data2.wednesday)}><a href="/#">Wednesday</a></li>
+          <li className={selectedTab === tabs.thursday && "is-active"} onClick={() => handleTabClick(tabs.thursday, data2.thursday)}><a href="/#">Thursday</a></li>
+          <li className={selectedTab === tabs.friday && "is-active"} onClick={() => handleTabClick(tabs.friday, data2.friday)}><a href="/#">Friday</a></li>
+          <li className={selectedTab === tabs.saturday && "is-active"} onClick={() => handleTabClick(tabs.saturday, data2.saturday)}><a href="/#">Saturday</a></li>
+          <li className={selectedTab === tabs.sunday && "is-active"} onClick={() => handleTabClick(tabs.sunday, data2.sunday)}><a href="/#">Sunday</a></li>
         </ul>
       </div>
 
@@ -151,6 +206,14 @@ function App() {
             classNamePrefix="stages" 
             name="stages"
             onChange={handleStageFilterChange}
+            styles={{
+              control: (baseStyles, state) => ({
+                ...baseStyles,
+                height: '100px', 
+                overflow: 'scroll'
+              })
+            }}
+            menuPortalTarget={document.querySelector('body')}
           />
         </div>
       }
@@ -166,6 +229,9 @@ function App() {
         </div>
       }
 
+
+      {selectedTab === tabs.wednesday && mappedWednesday}
+      {selectedTab === tabs.thursday && mappedThursday}
       {selectedTab === tabs.friday && mappedFriday}
       {selectedTab === tabs.saturday && mappedSaturday}
       {selectedTab === tabs.sunday && mappedSunday}
