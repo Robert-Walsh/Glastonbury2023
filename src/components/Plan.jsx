@@ -47,42 +47,52 @@ function Plan({selectedActs}) {
 
   return (
     <div>
-      <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Wednesday</div>
-        <hr/>
+      {mappedWednesdayActs.length > 0 && 
+        <div className="card" style={{'margin': '20px'}}>
+          <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Wednesday</div>
+          <hr/>
 
-        {mappedWednesdayActs}
-      </div>
+          {mappedWednesdayActs}
+        </div>
+      }
 
-      <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Thursday</div>
-        <hr/>
+      {mappedThursdayActs.length > 0 && 
+        <div className="card" style={{'margin': '20px'}}>
+          <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Thursday</div>
+          <hr/>
 
-        {mappedThursdayActs}
-      </div>
+          {mappedThursdayActs}
+        </div>
+      }
 
 
-      <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Friday</div>
-        <hr/>
+      {mappedFridayActs.length > 0 && 
+        <div className="card" style={{'margin': '20px'}}>
+          <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Friday</div>
+          <hr/>
 
-        {mappedFridayActs}
-      </div>
+          {mappedFridayActs}
+        </div>
+      }
       
-      <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Saturday</div>
-        <hr/>
+      {mappedSaturdayActs.length > 0 && 
+        <div className="card" style={{'margin': '20px'}}>
+          <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Saturday</div>
+          <hr/>
 
-        {mappedSaturdayActs}
-      </div>
+          {mappedSaturdayActs}
+        </div>
+      }
 
 
-      <div className="card" style={{'margin': '20px'}}>
-        <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Sunday</div>
-        <hr/>
+      {mappedSundayActs.length > 0 && 
+        <div className="card" style={{'margin': '20px'}}>
+          <div className="title" style={{'paddingTop': '25px', 'textAlign': 'center'}}>Sunday</div>
+          <hr/>
 
-        {mappedSundayActs}
-      </div>
+          {mappedSundayActs}
+        </div>
+      }
     </div>
   )
 }
