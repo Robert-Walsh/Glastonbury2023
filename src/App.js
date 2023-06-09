@@ -105,6 +105,9 @@ function App() {
         <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
       )
     }
+    else return (
+      <div></div>
+    )
   })
 
   const mappedThursday = data2.thursday
@@ -126,6 +129,9 @@ function App() {
         <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
       )
     }
+    else return (
+      <div></div>
+    )
   })
 
 
@@ -148,6 +154,9 @@ function App() {
         <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
       )
     }
+    else return (
+      <div></div>
+    )
   })
 
   const mappedSaturday = data2.saturday
@@ -168,6 +177,9 @@ function App() {
         <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
       )
     }
+    else return (
+      <div></div>
+    )
   })
 
   const mappedSunday = data2.sunday
@@ -189,6 +201,9 @@ function App() {
         <Stage key={stage.stageName} stageName={stage.stageName} acts={mappedActs}/>
       )
     }
+    else return (
+      <div></div>
+    )
   })
 
   return (
